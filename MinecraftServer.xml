@@ -39,7 +39,7 @@
     </Variable>
 	<Variable>
       <Name>JVM_OPTS</Name>
-      <Value></Value>
+      <Value>-Xms1024M -Xmx4096M</Value>
     </Variable>	
     <Variable>
       <Name>UMASK</Name>
