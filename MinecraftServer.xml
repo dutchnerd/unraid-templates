@@ -2,7 +2,7 @@
 <Containers>
   <TemplateURL>https://github.com/dutchnerd/unraid-templates/blob/master/MinecraftServer.xml</TemplateURL>
   <Beta>False</Beta>
-  <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Category></Category>
   <Name>Minecraft server</Name>
   <Description>
 	minecraft server for docker i have only make the template for unraid docker
@@ -12,7 +12,7 @@
   </Overview>
   <Registry>https://hub.docker.com/r/itzg/minecraft-server</Registry>
   <GitHub>https://github.com/itzg/dockerfiles/tree/master/minecraft-server</GitHub>
-  <Repository>itzg/dockerfiles/minecraft-server</Repository>
+  <Repository>itzg/minecraft-server</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
@@ -22,9 +22,25 @@
   </Networking>
   <Environment>
     <Variable>
-      <Name>TRANS_DIR</Name>
-      <Value>/config/transcode</Value>
+      <Name>VERSION</Name>
+      <Value>1.12.2</Value>
     </Variable>
+	<Variable>
+      <Name>TYPE</Name>
+      <Value>FORGE</Value>
+    </Variable>
+	<Variable>
+      <Name>FORGEVERSION</Name>
+      <Value></Value>
+    </Variable>
+	<Variable>
+      <Name>EULA</Name>
+      <Value>TRUE</Value>
+    </Variable>
+	<Variable>
+      <Name>JVM_OPTS</Name>
+      <Value></Value>
+    </Variable>	
     <Variable>
       <Name>UMASK</Name>
       <Value>000</Value>
@@ -40,13 +56,8 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
+      <HostDir>/mnt/cache/appdata</HostDir>
+      <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
