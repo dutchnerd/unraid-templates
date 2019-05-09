@@ -44,7 +44,7 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata</HostDir>
+      <HostDir>/mnt/user/appdata/{{Name}}</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
