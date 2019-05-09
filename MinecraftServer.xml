@@ -41,18 +41,6 @@
       <Name>JVM_OPTS</Name>
       <Value>-Xms1024M -Xmx4096M</Value>
     </Variable>	
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
   </Environment>
   <Data>
     <Volume>
