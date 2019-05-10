@@ -14,12 +14,11 @@
   <GitHub>https://github.com/itzg/dockerfiles/tree/master/minecraft-server</GitHub>
   <Repository>itzg/minecraft-server</Repository>
   <BindTime>true</BindTime>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Networking>
     <Mode>host</Mode>
-    <Publish>
-    </Publish>
-  </Networking>
+    <Publish/>
+</Networking>
   <Environment>
     <Variable>
       <Name>VERSION</Name>
@@ -44,7 +43,7 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/{{Name}}</HostDir>
+      <HostDir>/mnt/user/appdata/</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
