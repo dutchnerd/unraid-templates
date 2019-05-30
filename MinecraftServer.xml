@@ -60,6 +60,6 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Icon>https://github.com/dutchnerd/unraid-templates/blob/master/images/minecraftserver-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/dutchnerd/unraid-templates/blob/master/images/minecraftserver-icon.png</Icon>
    <ExtraParams></ExtraParams>
 </Containers>
